@@ -4,8 +4,16 @@ Veri Yapıları ve  Algoritma  dersi
 
 *** Merge Sort gösterimi:
 
-[16,21,11,8,12,22]
+[16,21,11,8,12,22] listeyi parçalara ayırarak düzenlemeye başlıyor.
 
+[16,21,11]                       [8,12,22]
+[16,21]  [11]                  [8,12]  [22]  tek parça kalana kadar ayırma işlemi devam eder.
+[16] [21] [11]                 [8] [12] [22]
+küçükten büyüğe doğru düzenlemeye başlar.
+[16] [11,21,]                 [8]  [12,22]
+[11,16,21]                     [8,12,22]
+          [8,11,12,16,21,22]  
+Sıralama işlemi küçükten büyüğe doğru tamamlanır.          
 **Big-O gösterimini yazınız.
 
-***n(logn)
+***O(nlogn)
